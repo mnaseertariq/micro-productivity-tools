@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro Productivity Tools</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Micro Productivity Tools</h1>
+  </header>
+
+  <main>
+    <!-- Pomodoro Timer -->
+    <section class="tool">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer">25:00</div>
+      <button id="start-timer">Start</button>
+      <button id="reset-timer">Reset</button>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="tool">
+      <h2>To-Do List</h2>
+      <input type="text" id="task-input" placeholder="Add a new task">
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Quick Notes -->
+    <section class="tool">
+      <h2>Quick Notes</h2>
+      <textarea id="notes" placeholder="Jot down your ideas..."></textarea>
+      <button id="save-notes">Save Notes</button>
+    </section>
+
+    <!-- Habit Tracker -->
+    <section class="tool">
+      <h2>Habit Tracker</h2>
+      <div id="habits">
+        <label><input type="checkbox" id="habit1"> Drink Water</label>
+        <label><input type="checkbox" id="habit2"> Exercise</label>
+        <label><input type="checkbox" id="habit3"> Read</label>
+      </div>
+    </section>
+
+    <!-- Unit Converter -->
+    <section class="tool">
+      <h2>Unit Converter</h2>
+      <input type="number" id="unit-input" placeholder="Enter value">
+      <select id="unit-type">
+        <option value="celsius">Celsius to Fahrenheit</option>
+        <option value="kilometers">Kilometers to Miles</option>
+        <option value="kilograms">Kilograms to Pounds</option>
+      </select>
+      <button id="convert-unit">Convert</button>
+      <div id="conversion-result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
